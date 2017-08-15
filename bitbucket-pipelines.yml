@@ -5,4 +5,4 @@ pipelines:
         script:
           - apt-get update
           - apt-get -qq install git-ftp
-          - git ftp init --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://192.252.144.38/public_html/
+          - git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://192.252.144.38/public_html/
